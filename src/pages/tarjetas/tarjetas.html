@@ -1,0 +1,194 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tarjetas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<!--El class="card-background-page" es para las imagenes de fondo-->
+<ion-content padding class="card-background-page">
+  <h3>Tarjeta: Basica</h3>
+  <ion-card>
+    <ion-card-content>
+        Esta es solo tu tarjeta básica con algo de texto para arrancar. ¿Te Gusta?
+    </ion-card-content>
+  </ion-card>
+  <h3>Tarjeta: Encabezado</h3>
+  <ion-card>
+    <ion-card-header>
+        Encabezado
+      </ion-card-header>
+      <ion-card-content>
+        Esta es tu tarjeta con Encabezado. ¿Te Gusta?
+      </ion-card-content>
+    </ion-card>
+  <h3>Tarjeta: Lista</h3>
+  <ion-card>
+      <ion-card-header>
+        Explorar
+      </ion-card-header>
+    
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="cart" item-start></ion-icon>
+          De Compras
+        </button>
+    
+        <button ion-item>
+          <ion-icon name="medical" item-start></ion-icon>
+          Hospital
+        </button>
+    
+        <button ion-item>
+          <ion-icon name="cafe" item-start></ion-icon>
+          Cafe
+        </button>
+    
+        <button ion-item>
+          <ion-icon name="paw" item-start></ion-icon>
+          Veterinario
+        </button>
+    
+        <button ion-item>
+          <ion-icon name="beer" item-start></ion-icon>
+          Cerveceria
+        </button>
+    
+        <button ion-item>
+          <ion-icon name="planet" item-start></ion-icon>
+          Espacio
+        </button>
+      </ion-list>
+    </ion-card>
+    <h3>Tarjetas: Imagenes</h3>
+    <ion-card>
+        <img height="200px" src= {{imagen}}/>
+        <ion-card-content>
+          <ion-card-title>
+            Ramstein
+            </ion-card-title>
+          <p>
+            El grupo industrial más popular de todos los tiempos, y en gran parte responsable de llevar la música a una audiencia masiva.
+          </p>
+        </ion-card-content>
+
+        <ion-row no-padding>
+            <ion-col>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='star'></ion-icon>
+                Favorite
+              </button>
+            </ion-col>
+            <ion-col text-center>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='musical-notes'></ion-icon>
+                Listen
+              </button>
+            </ion-col>
+            <ion-col text-right>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='share-alt'></ion-icon>
+                Share
+              </button>
+            </ion-col>
+          </ion-row>
+
+      </ion-card>
+      <h3>Tarjetas: Imagenes de fondo</h3>
+      <ion-card>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+          <div class="card-title">São Paulo</div>
+          <div class="card-subtitle">41 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png"/>
+          <div class="card-title">Amsterdam</div>
+          <div class="card-subtitle">64 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-sf.png"/>
+          <div class="card-title">San Francisco</div>
+          <div class="card-subtitle">72 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-madison.png"/>
+          <div class="card-title">Madison</div>
+          <div class="card-subtitle">28 Listings</div>
+        </ion-card>
+        <h3>Tarjetas: Avanzadas(Sociales)</h3>
+        <ion-card>
+
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/marty-avatar.png">
+              </ion-avatar>
+              <h2>Marty McFly</h2>
+              <p>November 5, 1955</p>
+            </ion-item>
+          
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-bttf.png">
+          
+            <ion-card-content>
+              <p>
+                  Espera un minuto. Espera un minuto, Doc. Uhhh ... ¿Me estás diciendo que construiste una máquina del tiempo ... de un DeLorean? Whoa. Esto es pesado.</p>
+            </ion-card-content>
+          
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-start clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <div>12 Likes</div>
+                </button>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-start clear small>
+                  <ion-icon name="text"></ion-icon>
+                  <div>4 Comments</div>
+                </button>
+              </ion-col>
+              <ion-col center text-center>
+                <ion-note>
+                  11h ago
+                </ion-note>
+              </ion-col>
+            </ion-row>
+          
+          </ion-card>
+          <h3>Tarjetas: Avanzadas(Mapa)</h3>
+          <ion-card>
+
+              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-map-madison.png">
+              <ion-fab right top>
+                <button ion-fab>
+                  <ion-icon name="pin"></ion-icon>
+                </button>
+              </ion-fab>
+            
+              <ion-item>
+                <ion-icon name="football" item-start large></ion-icon>
+                <h2>Museum of Football</h2>
+                <p>11 N. Way St, Madison, WI 53703</p>
+              </ion-item>
+            
+              <ion-item>
+                <ion-icon name="wine" item-start large ></ion-icon>
+                <h2>Institute of Fine Cocktails</h2>
+                <p>14 S. Hop Avenue, Madison, WI 53703</p>
+              </ion-item>
+            
+              <ion-item>
+                <span item-start>18 min</span>
+                <span item-start>(2.6 mi)</span>
+                <button ion-button icon-start clear item-end>
+                  <ion-icon name="navigate"></ion-icon>
+                  Start
+                </button>
+              </ion-item>
+            
+            </ion-card>
+ </ion-content>

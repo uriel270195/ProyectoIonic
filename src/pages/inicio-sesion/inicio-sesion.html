@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bienvenido!!!</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <form action="">
+    <p>Username:</p>
+    <input type="text" name="user" [(ngModel)]="user"><br>
+    <p>Password</p>
+    <input type="password" name="password" [(ngModel)]="pass">
+    <p>
+      <button ion-button color="primary" (click)="Acceder()">Iniciar sesion</button>
+    </p>
+  </form>
+</ion-content>

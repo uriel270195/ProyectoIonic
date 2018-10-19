@@ -1,0 +1,22 @@
+<ion-header>
+        <ion-navbar>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Tipos de alertas</ion-title>
+        </ion-navbar>
+    </ion-header>
+    <ion-content padding>
+    
+      <h3>Click en un botón</h3>
+      <input type="text" name="datoOutput" value= {{datoOutput}} readonly>
+      <p>
+          <button ion-button color="primary" (click)="showAlertBasic()">Alerta basica</button>
+          <button ion-button color="primary" (click)="showAlert()">Alerta</button>
+          <button ion-button color="primary" (click)="showPrompt()">Alerta Rapida</button>
+          <button ion-button color="primary" (click)="showConfirm()">Alerta de Confirmación</button>
+          <button ion-button color="primary" (click)="showRadio()">Alerta de Radio</button>
+          <button ion-button color="primary" (click)="showCheckbox()">Alerta de Caja</button>
+      </p>
+    
+    </ion-content>    
